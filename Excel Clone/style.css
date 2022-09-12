@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+}
+
+.title-bar {
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14;
+}
+
+.menu-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.selected {
+    background-color: #fff;
+    color: #107c41;
+}
+
+.menu-bar {
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;
+}
+
+.menu-item:hover{
+    background-color: #0b6433;
+    cursor: pointer;
+}
+
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor: default;
+}
+
+.menu-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-icon:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.selector {
+    height:30px;
+    font-size: 18px;
+}
+
+.font-family-selector{
+    width: 150px;
+}
+
+.selector option {
+    font-size: 18px;
+}
+
+.menu-icon-bar {
+    height: 6vh;
+    display: flex;
+    background-color: rgb(226, 223, 223);
+    align-items: center;
+}
+
+
+.formula-bar {
+    height: 5vh;
+}
+
+.data-container{
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-left-scroll,.icon-right-scroll{
+    font-size: 30px;
+}
+
+.icon-add {
+    color: #107c41;
+    width: 40px;
+}
+
+.icon-add:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.icon-left-scroll:hover, .icon-right-scroll:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.sheet-tab{
+    border-bottom: 4px solid#107c41;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-right: 1px solid;
+    cursor:default;
+}
+
+.sheet-bar {
+    height: 4vh;
+    display: flex;
+}
+
+.scroller {
+    width: 70px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.sheet-tab-container {
+    border: 1px solid lightgray;
+    width: calc(100vw - 110px);
+}
+
+.select-all {
+    width: 30px;
+    height: 30px;
+    border:1px solid lightgray;
+
+}
+
+.column-name-container {
+    width: calc(100vw - 30px);
+    height: 30px;
+    border:1px solid lightgray;
+    display: flex;
+}
+
+.row-name-container {
+    width: 30px;
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+}
+
+.input-cell-container {
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+}
+
+.column-name {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    font-weight: "bold";
+}
+
+.row-name {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    font-weight: "bold";
+}
+
+.cell-row {
+    display: flex;
+}
+
+.input-cell {
+    width: 100px;
+    height: 25px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
